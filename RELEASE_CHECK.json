@@ -1,0 +1,31 @@
+{
+  "version": "22.0-kostolany-stage-first",
+  "base": "21.6-bulk-cache-studio",
+  "entrypoint": "app.py",
+  "tests": {
+    "pytest": "181 passed",
+    "compileall": "passed"
+  },
+  "synthetic_scale": {
+    "stocks": 520,
+    "benchmark": 1,
+    "sessions": 1450,
+    "market_performance_claim": false,
+    "first_v22_cache_and_fast_seconds": 19.87,
+    "identical_rerun_seconds": 0.94,
+    "one_candidate_weight_edit_seconds": 1.06,
+    "one_time_pool_study_seconds": 2.26
+  },
+  "design": {
+    "stage_first": true,
+    "pool_study_once": true,
+    "default_pool": "KOSTO300",
+    "full_test_report": "V22_TEST_REPORT.zip",
+    "automatic_orders": false
+  },
+  "limitations": [
+    "synthetic speed is not Streamlit Cloud guarantee",
+    "book concepts are quantitative proxies, not original formulas",
+    "news reaction and literal holder counts are not observed"
+  ]
+}
